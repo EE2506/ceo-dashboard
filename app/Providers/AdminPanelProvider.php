@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Filament\Pages\OwnerLogin;
+use App\Filament\Pages\Today;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\AuthenticateSession;
 use Filament\Http\Middleware\DisableBladeIconComponents;
@@ -31,6 +32,7 @@ class AdminPanelProvider extends PanelProvider
             ->databaseTransactions()
             ->globalSearch(false)
             ->colors(['primary' => Color::Amber])
+            ->pages([Today::class])
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\Filament\Resources')
             ->middleware([
                 EncryptCookies::class,

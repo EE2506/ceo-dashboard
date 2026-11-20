@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Models\Client;
+use App\Models\FollowUp;
 use App\Models\Payment;
 use App\Models\Site;
 use App\Models\SiteChange;
@@ -15,7 +16,7 @@ class AppServiceProvider extends ServiceProvider
 {
     public function boot(): void
     {
-        foreach ([Client::class, Site::class, SiteChange::class, Payment::class] as $model) {
+        foreach ([Client::class, Site::class, SiteChange::class, Payment::class, FollowUp::class] as $model) {
             Gate::policy($model, ClientHubPolicy::class);
             $model::observe(ClientHubAudit::class);
         }

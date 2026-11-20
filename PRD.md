@@ -1,7 +1,7 @@
 # Product requirements — CEO Dashboard
 
 **Owner** — DJ, solo Laravel developer in Davao City, Philippines
-**Status** — Phase 1 implementation, November 21, 2026
+**Status** — Client Sites hub and local Today implemented, November 21, 2026
 **Product scope** — Balanced, shipped in milestones
 
 ## Goal
@@ -29,7 +29,7 @@ Phase 1 uses Filament 5 for the owner panel and provisions owners through a priv
 
 ## Phase 2 — Today and daily brief
 
-Use a dated follow-up list and a Gmail label such as `Needs action` as the first attention signals. Verify where the own-domain mail actually lands. Use offline Google OAuth against the receiving Google mailbox and start with `gmail.metadata` if label filtering suffices. Escalate scopes only when a concrete requirement demands it. External Testing grants for Gmail expire after seven days. Prefer Google Personal mode for one mailbox where eligible, and provide an owner-only reconnect path. If third-party POP fetching is involved, verify forwarding as the durable intake path.
+The local Today page lists up to five items. Open client follow-ups due by the current Manila date come first, then due unpaid or partially paid records. Each group sorts oldest due date first. Each row opens the exact record. An open follow-up has a dated title, a client, and an optional site. Next, verify which Google account receives the own-domain mail and use a label such as `Needs action`. Use offline OAuth against that account, beginning with `gmail.metadata` if label filtering suffices. External Testing grants for Gmail expire after seven days. Prefer Google Personal mode for one mailbox where eligible, and provide an owner-only reconnect path. For third-party POP fetching, verify forwarding as the durable intake path.
 
 At **10:00 AM Asia/Manila (02:00 UTC)**, hPanel starts a bounded PHP CLI run. Laravel claims the owner-and-date slot, reads local due items, and fetches a capped set of labeled mail references. The brief builder ranks structured facts, renders the template, and persists the dashboard brief. A separate authenticated mail transport sends a generic notification and login-protected link to DJ’s fixed address. Gmail OAuth remains read-only. Avoid persisting raw message bodies and attachments. Set retention for any Gmail-derived references.
 

@@ -1,12 +1,12 @@
 ---
 source_file: "PRD.md"
 type: "document"
-community: "Community 1"
+community: "Community 4"
 location: "L32"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1
+  - community/Community_4
 ---
 
 # Gmail read-only OAuth
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[AES-256-GCM encryption]] - `requires` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1
+#graphify/document #graphify/EXTRACTED #community/Community_4

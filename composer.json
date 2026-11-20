@@ -28,7 +28,7 @@
         }
     },
     "scripts": {
-        "lint": "pint --test --preset psr12",
+        "lint": "pint --test --preset psr12 app bootstrap config database public/index.php routes tests",
         "test": [
             "@php artisan config:clear --ansi @no_additional_args",
             "@php artisan test"

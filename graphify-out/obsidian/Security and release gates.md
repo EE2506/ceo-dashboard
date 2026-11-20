@@ -1,12 +1,12 @@
 ---
 source_file: "PRD.md"
 type: "document"
-community: "Community 1"
+community: "Community 4"
 location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1
+  - community/Community_4
 ---
 
 # Security and release gates
@@ -17,4 +17,4 @@ tags:
 - [[GitHub milestone workflow]] - `gates` [EXTRACTED]
 - [[Sensitive operation audit]] - `requires` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1
+#graphify/document #graphify/EXTRACTED #community/Community_4

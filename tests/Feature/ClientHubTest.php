@@ -37,7 +37,7 @@ class ClientHubTest extends TestCase
         ])->call('authenticate')->assertHasNoFormErrors();
 
         $this->assertAuthenticatedAs($owner);
-        $this->get('/admin')->assertRedirect('/admin/clients');
+        $this->get('/admin')->assertRedirect('/admin/today');
 
         $clientUser = User::factory()->create();
 

@@ -2,7 +2,7 @@
 
 A personal dashboard for DJ, a freelance web developer in Davao City. The first release is a Client Sites hub. The next release answers one question at 10 AM Manila time: what needs DJ’s attention today?
 
-**Status** — Phase 1 implements the owner-only Client Sites hub. Phase 2 remains in planning.
+**Status** — The owner-only Client Sites hub and local Today page are implemented. The Gmail connector and 10 AM brief are the remaining Phase 2 milestones.
 
 ## Start here
 
@@ -18,7 +18,7 @@ Use PHP 8.4 with current patches, Composer 2, and MySQL 8. PHP needs PDO MySQL a
 1. Copy `.env.example` to `.env` and enter the details of an empty local MySQL database. For localhost HTTP development, set `APP_ENV=local`, `APP_URL=http://127.0.0.1:8000`, and `SESSION_SECURE_COOKIE=false` in that local file.
 2. Run `composer install`, then check the runtime with `composer check-platform-reqs`.
 3. Run `php artisan key:generate` once for the new installation, then `php artisan migrate` and `php artisan dashboard:make-owner`. Choose a non-email username and enter the password at the hidden prompt. Protect the application key and retain it with encrypted backups.
-4. Run `php artisan serve` and open `http://127.0.0.1:8000/admin`. Use the owner account to manage clients, sites, change entries, and payment records. Use each site's **Change log** action for a filtered walkthrough.
+4. Run `php artisan serve` and open `http://127.0.0.1:8000/admin`. Today shows open follow-ups and outstanding payments due by the Manila date. Add or complete client follow-ups from **Follow ups**. Use each site's **Change log** action for a filtered walkthrough.
 
 Run `composer lint` and `composer test` before pushing changes.
 

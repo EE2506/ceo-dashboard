@@ -117,59 +117,26 @@
       "source_location": "L19"
     },
     {
-      "id": "encryption",
-      "label": "AES-256-GCM encryption",
+      "id": "follow_ups",
+      "label": "Dated client follow-ups",
       "_origin": "semantic",
       "community": 1,
       "community_name": "Community 1",
       "file_type": "document",
-      "norm_label": "aes-256-gcm encryption",
-      "source_file": "PRD.md",
-      "source_location": "L61"
-    },
-    {
-      "id": "gmail",
-      "label": "Gmail read-only OAuth",
-      "_origin": "semantic",
-      "community": 1,
-      "community_name": "Community 1",
-      "file_type": "document",
-      "norm_label": "gmail read-only oauth",
+      "norm_label": "dated client follow-ups",
       "source_file": "PRD.md",
       "source_location": "L32"
     },
     {
-      "id": "hub",
-      "label": "Phase 1 Client Sites hub",
+      "id": "today",
+      "label": "Today priorities",
       "_origin": "semantic",
       "community": 1,
       "community_name": "Community 1",
       "file_type": "document",
-      "norm_label": "phase 1 client sites hub",
+      "norm_label": "today priorities",
       "source_file": "PRD.md",
-      "source_location": "L13"
-    },
-    {
-      "id": "security",
-      "label": "Security and release gates",
-      "_origin": "semantic",
-      "community": 1,
-      "community_name": "Community 1",
-      "file_type": "document",
-      "norm_label": "security and release gates",
-      "source_file": "PRD.md",
-      "source_location": "L58"
-    },
-    {
-      "id": "agent_actions",
-      "label": "Phase 3 approved actions",
-      "_origin": "semantic",
-      "community": 2,
-      "community_name": "Community 2",
-      "file_type": "document",
-      "norm_label": "phase 3 approved actions",
-      "source_file": "PRD.md",
-      "source_location": "L42"
+      "source_location": "L7"
     },
     {
       "id": "brief",
@@ -183,6 +150,17 @@
       "source_location": "L30"
     },
     {
+      "id": "cron",
+      "label": "10 AM Manila cron",
+      "_origin": "semantic",
+      "community": 2,
+      "community_name": "Community 2",
+      "file_type": "document",
+      "norm_label": "10 am manila cron",
+      "source_file": "PRD.md",
+      "source_location": "L34"
+    },
+    {
       "id": "delivery",
       "label": "Brief delivery and recovery",
       "_origin": "semantic",
@@ -192,6 +170,17 @@
       "norm_label": "brief delivery and recovery",
       "source_file": "PRD.md",
       "source_location": "L38"
+    },
+    {
+      "id": "hosting",
+      "label": "Hostinger Web or Cloud",
+      "_origin": "semantic",
+      "community": 2,
+      "community_name": "Community 2",
+      "file_type": "document",
+      "norm_label": "hostinger web or cloud",
+      "source_file": "PRD.md",
+      "source_location": "L52"
     },
     {
       "id": "model",
@@ -205,15 +194,37 @@
       "source_location": "L46"
     },
     {
-      "id": "roadmap",
-      "label": "Phased roadmap",
+      "id": "stack",
+      "label": "Laravel and MySQL",
       "_origin": "semantic",
       "community": 2,
       "community_name": "Community 2",
       "file_type": "document",
-      "norm_label": "phased roadmap",
+      "norm_label": "laravel and mysql",
       "source_file": "PRD.md",
-      "source_location": "L65"
+      "source_location": "L54"
+    },
+    {
+      "id": "agent_actions",
+      "label": "Phase 3 approved actions",
+      "_origin": "semantic",
+      "community": 3,
+      "community_name": "Community 3",
+      "file_type": "document",
+      "norm_label": "phase 3 approved actions",
+      "source_file": "PRD.md",
+      "source_location": "L42"
+    },
+    {
+      "id": "hub",
+      "label": "Phase 1 Client Sites hub",
+      "_origin": "semantic",
+      "community": 3,
+      "community_name": "Community 3",
+      "file_type": "document",
+      "norm_label": "phase 1 client sites hub",
+      "source_file": "PRD.md",
+      "source_location": "L13"
     },
     {
       "id": "payments",
@@ -238,15 +249,15 @@
       "source_location": "L48"
     },
     {
-      "id": "today",
-      "label": "Today priorities",
+      "id": "roadmap",
+      "label": "Phased roadmap",
       "_origin": "semantic",
       "community": 3,
       "community_name": "Community 3",
       "file_type": "document",
-      "norm_label": "today priorities",
+      "norm_label": "phased roadmap",
       "source_file": "PRD.md",
-      "source_location": "L7"
+      "source_location": "L65"
     },
     {
       "id": "vault_log",
@@ -260,37 +271,37 @@
       "source_location": "L17"
     },
     {
-      "id": "cron",
-      "label": "10 AM Manila cron",
+      "id": "encryption",
+      "label": "AES-256-GCM encryption",
       "_origin": "semantic",
       "community": 4,
       "community_name": "Community 4",
       "file_type": "document",
-      "norm_label": "10 am manila cron",
+      "norm_label": "aes-256-gcm encryption",
       "source_file": "PRD.md",
-      "source_location": "L34"
+      "source_location": "L61"
     },
     {
-      "id": "hosting",
-      "label": "Hostinger Web or Cloud",
+      "id": "gmail",
+      "label": "Gmail read-only OAuth",
       "_origin": "semantic",
       "community": 4,
       "community_name": "Community 4",
       "file_type": "document",
-      "norm_label": "hostinger web or cloud",
+      "norm_label": "gmail read-only oauth",
       "source_file": "PRD.md",
-      "source_location": "L52"
+      "source_location": "L32"
     },
     {
-      "id": "stack",
-      "label": "Laravel and MySQL",
+      "id": "security",
+      "label": "Security and release gates",
       "_origin": "semantic",
       "community": 4,
       "community_name": "Community 4",
       "file_type": "document",
-      "norm_label": "laravel and mysql",
+      "norm_label": "security and release gates",
       "source_file": "PRD.md",
-      "source_location": "L54"
+      "source_location": "L58"
     }
   ],
   "links": [
@@ -314,6 +325,17 @@
       "confidence_score": 1,
       "source_file": "PRD.md",
       "source_location": "L7",
+      "weight": 1
+    },
+    {
+      "source": "follow_ups",
+      "target": "client_scope",
+      "relation": "enforces",
+      "_origin": "semantic",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "PRD.md",
+      "source_location": "L32",
       "weight": 1
     },
     {
@@ -449,6 +471,17 @@
       "weight": 1
     },
     {
+      "source": "today",
+      "target": "follow_ups",
+      "relation": "prioritizes",
+      "_origin": "semantic",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "PRD.md",
+      "source_location": "L32",
+      "weight": 1
+    },
+    {
       "source": "brief",
       "target": "delivery",
       "relation": "publishes_through",
@@ -545,6 +578,17 @@
       "confidence_score": 1,
       "source_file": "PRD.md",
       "source_location": "L44",
+      "weight": 1
+    },
+    {
+      "source": "follow_ups",
+      "target": "audit",
+      "relation": "records_events_in",
+      "_origin": "semantic",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "PRD.md",
+      "source_location": "L32",
       "weight": 1
     },
     {

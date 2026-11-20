@@ -16,7 +16,7 @@
 ## Proposed defaults to confirm before the relevant phase
 
 - **Phase 1 deployment** — Check the target Hostinger account's PHP 8.4 runtime and ability to expose only the public directory. Payments support an optional site. Choose a public redistribution license and confirm whether a push should deploy.
-- **Phase 2** — Confirm which Google account actually receives own-domain mail, its OAuth audience, and the outbound sender. Start with a manually applied Gmail label, dated follow-ups, and unpaid items with due dates. Send a generic notification with a private dashboard link.
+- **Phase 2** — Build and verify locally before Hostinger deployment. Keep MySQL for the current milestone. MariaDB remains an option after running the same migration and feature suite there. For Gmail, confirm the receiving account, OAuth audience, label, and outbound sender. Send a generic notification with a private dashboard link.
 - **Phase 3** — Select a provider and retention policy for DJ’s model. The first approved write creates an internal follow-up.
 - **Phase 4** — Confirm who may view each client’s records, what historical entries may be shared, and whether invoice links remain private when copied. Support multiple named contacts per client if the pilot requires it.
 

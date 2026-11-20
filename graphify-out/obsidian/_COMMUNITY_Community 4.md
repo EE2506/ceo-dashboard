@@ -10,9 +10,9 @@ members: 3
 **Members:** 3 nodes
 
 ## Members
-- [[10 AM Manila cron]] - document - PRD.md
-- [[Hostinger Web or Cloud]] - document - PRD.md
-- [[Laravel and MySQL]] - document - PRD.md
+- [[AES-256-GCM encryption]] - document - PRD.md
+- [[Gmail read-only OAuth]] - document - PRD.md
+- [[Security and release gates]] - document - PRD.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -22,4 +22,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 2 edges to [[_COMMUNITY_Community 0]]
+- 2 edges to [[_COMMUNITY_Community 1]]
 - 1 edge to [[_COMMUNITY_Community 2]]
+
+## Top bridge nodes
+- [[Security and release gates]] - degree 5, connects to 2 communities

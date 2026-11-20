@@ -1,22 +1,20 @@
 ---
 type: community
-cohesion: 0.38
-members: 7
+cohesion: 0.50
+members: 5
 ---
 
 # Community 1
 
-**Cohesion:** 0.38 - loosely connected
-**Members:** 7 nodes
+**Cohesion:** 0.50 - moderately connected
+**Members:** 5 nodes
 
 ## Members
-- [[AES-256-GCM encryption]] - document - PRD.md
 - [[Client ownership and visibility]] - document - PRD.md
-- [[Gmail read-only OAuth]] - document - PRD.md
-- [[Phase 1 Client Sites hub]] - document - PRD.md
+- [[Dated client follow-ups]] - document - PRD.md
 - [[Propose then approve]] - document - PRD.md
-- [[Security and release gates]] - document - PRD.md
 - [[Sensitive operation audit]] - document - PRD.md
+- [[Today priorities]] - document - PRD.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,10 +24,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 3 edges to [[_COMMUNITY_Community 3]]
-- 3 edges to [[_COMMUNITY_Community 2]]
-- 2 edges to [[_COMMUNITY_Community 0]]
+- 5 edges to [[_COMMUNITY_Community 3]]
+- 2 edges to [[_COMMUNITY_Community 4]]
+- 1 edge to [[_COMMUNITY_Community 0]]
+- 1 edge to [[_COMMUNITY_Community 2]]
 
 ## Top bridge nodes
-- [[Phase 1 Client Sites hub]] - degree 5, connects to 1 community
-- [[Security and release gates]] - degree 5, connects to 1 community
+- [[Today priorities]] - degree 4, connects to 2 communities

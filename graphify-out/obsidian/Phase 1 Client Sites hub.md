@@ -1,12 +1,12 @@
 ---
 source_file: "PRD.md"
 type: "document"
-community: "Community 1"
+community: "Community 3"
 location: "L13"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1
+  - community/Community_3
 ---
 
 # Phase 1 Client Sites hub
@@ -17,4 +17,4 @@ tags:
 - [[Sensitive operation audit]] - `requires` [EXTRACTED]
 - [[Site change-log vault]] - `records` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_1
+#graphify/document #graphify/EXTRACTED #community/Community_3
