@@ -29,9 +29,8 @@ SORT file.name ASC
 
 ## Connections to other communities
 - 4 edges to [[_COMMUNITY_Community 1]]
-- 2 edges to [[_COMMUNITY_Community 2]]
-- 2 edges to [[_COMMUNITY_Community 4]]
-- 1 edge to [[_COMMUNITY_Community 0]]
+- 3 edges to [[_COMMUNITY_Community 0]]
+- 3 edges to [[_COMMUNITY_Community 2]]
 
 ## Top bridge nodes
 - [[Phase 1 Client Sites hub]] - degree 5, connects to 1 community

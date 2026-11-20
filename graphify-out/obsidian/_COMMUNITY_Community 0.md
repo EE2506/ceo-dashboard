@@ -1,13 +1,13 @@
 ---
 type: community
-cohesion: 0.43
-members: 7
+cohesion: 0.39
+members: 8
 ---
 
 # Community 0
 
-**Cohesion:** 0.43 - moderately connected
-**Members:** 7 nodes
+**Cohesion:** 0.39 - loosely connected
+**Members:** 8 nodes
 
 ## Members
 - [[Agent handoff]] - document - AGENTS.md
@@ -17,6 +17,7 @@ members: 7
 - [[Obsidian vault]] - document - readme.md
 - [[Product requirements]] - document - PRD.md
 - [[Project decisions]] - document - Decisions.md
+- [[Security and release gates]] - document - PRD.md
 
 ## Live Query (requires Dataview plugin)
 
@@ -26,10 +27,11 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 3 edges to [[_COMMUNITY_Community 3]]
 - 2 edges to [[_COMMUNITY_Community 1]]
-- 2 edges to [[_COMMUNITY_Community 4]]
-- 1 edge to [[_COMMUNITY_Community 3]]
+- 1 edge to [[_COMMUNITY_Community 2]]
 
 ## Top bridge nodes
-- [[Product requirements]] - degree 4, connects to 2 communities
+- [[Security and release gates]] - degree 5, connects to 2 communities
 - [[CEO Dashboard]] - degree 7, connects to 1 community
+- [[Product requirements]] - degree 4, connects to 1 community

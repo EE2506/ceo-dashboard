@@ -2,7 +2,7 @@
 
 A personal dashboard for DJ, a freelance web developer in Davao City. The first release is a Client Sites hub. The next release answers one question at 10 AM Manila time: what needs DJ’s attention today?
 
-**Status** — The owner-only Client Sites hub, Today page, and Analytics are implemented. The Gmail connector and 10 AM brief are the remaining Phase 2 milestones.
+**Status** — The owner-only Client Sites hub, Today page, Analytics, and read-only Gmail connector are implemented. Live Gmail authorization and the 10 AM brief remain.
 
 ## Start here
 
@@ -39,3 +39,14 @@ Keep real client records, mailbox content, OAuth tokens, keys, environment files
 ## Refresh the graph
 
 The initial semantic index was curated from the four planning notes. After those notes change, re-extract or update the semantic nodes and source references in `graphify-out/graph.json` before rebuilding. Run `graphify cluster-only . --no-label`, then `graphify export obsidian --dir graphify-out/obsidian` from the project root. In the exported canvas, prefix file-card paths with `graphify-out/obsidian/` so they resolve from this vault’s root. Verify the canvas paths and run a Graphify query before committing the refresh.
+
+## Connect Gmail locally
+
+1. Enable the Gmail API in the Google Cloud project for the account that receives your client mail. Use [Google Personal mode](https://support.google.com/cloud/answer/15549945?hl=en) when eligible for one account. For a Workspace account, confirm any organization restrictions.
+2. Create a **Web application** OAuth client and register the exact redirect URI. For the local preview, use `http://127.0.0.1:8021/admin/gmail/callback`. Match the host and port you use to sign into the app.
+3. Set `GMAIL_CLIENT_ID`, `GMAIL_CLIENT_SECRET`, and `GMAIL_REDIRECT_URI` in the ignored local `.env`. Clear Laravel's configuration cache if enabled. Use HTTPS for a deployed callback.
+4. Create a Gmail label named **Needs action**, or set `GMAIL_ACTION_LABEL` to the exact name of an existing label. In the owner panel, open **Gmail**, choose **Connect Gmail**, and authorize the account that actually receives your work messages.
+
+The connector requests `gmail.metadata` and displays subject and sender for up to five labeled threads. It stores the mailbox identity and OAuth tokens encrypted, and records connection and disconnection in the audit trail. Thread headers are read on demand. External Testing Gmail refresh tokens expire after seven days. If access is revoked, reconnect from the Gmail screen. If Google revocation cannot be confirmed after disconnect, check the app under your Google Account's third-party access settings.
+
+[Google web-server OAuth flow](https://developers.google.com/identity/protocols/oauth2/web-server) · [Gmail scope reference](https://developers.google.com/workspace/gmail/api/auth/scopes)

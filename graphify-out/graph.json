@@ -73,6 +73,17 @@
       "source_location": "L1"
     },
     {
+      "id": "security",
+      "label": "Security and release gates",
+      "_origin": "semantic",
+      "community": 0,
+      "community_name": "Community 0",
+      "file_type": "document",
+      "norm_label": "security and release gates",
+      "source_file": "PRD.md",
+      "source_location": "L58"
+    },
+    {
       "id": "vault",
       "label": "Obsidian vault",
       "_origin": "semantic",
@@ -159,6 +170,28 @@
       "norm_label": "brief delivery and recovery",
       "source_file": "PRD.md",
       "source_location": "L38"
+    },
+    {
+      "id": "encryption",
+      "label": "AES-256-GCM encryption",
+      "_origin": "semantic",
+      "community": 2,
+      "community_name": "Community 2",
+      "file_type": "document",
+      "norm_label": "aes-256-gcm encryption",
+      "source_file": "PRD.md",
+      "source_location": "L61"
+    },
+    {
+      "id": "gmail",
+      "label": "Gmail read-only OAuth",
+      "_origin": "semantic",
+      "community": 2,
+      "community_name": "Community 2",
+      "file_type": "document",
+      "norm_label": "gmail read-only oauth",
+      "source_file": "PRD.md",
+      "source_location": "L32"
     },
     {
       "id": "hosting",
@@ -280,39 +313,6 @@
       "norm_label": "site change-log vault",
       "source_file": "PRD.md",
       "source_location": "L17"
-    },
-    {
-      "id": "encryption",
-      "label": "AES-256-GCM encryption",
-      "_origin": "semantic",
-      "community": 4,
-      "community_name": "Community 4",
-      "file_type": "document",
-      "norm_label": "aes-256-gcm encryption",
-      "source_file": "PRD.md",
-      "source_location": "L61"
-    },
-    {
-      "id": "gmail",
-      "label": "Gmail read-only OAuth",
-      "_origin": "semantic",
-      "community": 4,
-      "community_name": "Community 4",
-      "file_type": "document",
-      "norm_label": "gmail read-only oauth",
-      "source_file": "PRD.md",
-      "source_location": "L32"
-    },
-    {
-      "id": "security",
-      "label": "Security and release gates",
-      "_origin": "semantic",
-      "community": 4,
-      "community_name": "Community 4",
-      "file_type": "document",
-      "norm_label": "security and release gates",
-      "source_file": "PRD.md",
-      "source_location": "L58"
     }
   ],
   "links": [
@@ -600,6 +600,17 @@
       "confidence_score": 1,
       "source_file": "PRD.md",
       "source_location": "L13",
+      "weight": 1
+    },
+    {
+      "source": "gmail",
+      "target": "audit",
+      "relation": "records_connection_changes_in",
+      "_origin": "semantic",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "PRD.md",
+      "source_location": "L32",
       "weight": 1
     },
     {

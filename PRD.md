@@ -1,7 +1,7 @@
 # Product requirements — CEO Dashboard
 
 **Owner** — DJ, solo Laravel developer in Davao City, Philippines
-**Status** — Client Sites hub, Today, and owner Analytics implemented, November 21, 2026
+**Status** — Client Sites hub, Today, owner Analytics, and read-only Gmail connector implemented, November 21, 2026
 **Product scope** — Balanced, shipped in milestones
 
 ## Goal
@@ -29,7 +29,7 @@ Phase 1 uses Filament 5 for the owner panel and provisions owners through a priv
 
 ## Phase 2 — Today and daily brief
 
-The local Today page lists up to five items. Open client follow-ups due by the current Manila date come first, then due unpaid or partially paid records. Each group sorts oldest due date first. Each row opens the exact record. An open follow-up has a dated title, a client, and an optional site. Next, verify which Google account receives the own-domain mail and use a label such as `Needs action`. Use offline OAuth against that account, beginning with `gmail.metadata` if label filtering suffices. External Testing grants for Gmail expire after seven days. Prefer Google Personal mode for one mailbox where eligible, and provide an owner-only reconnect path. For third-party POP fetching, verify forwarding as the durable intake path.
+The local Today page lists up to five items. Open client follow-ups due by the current Manila date come first, then due unpaid or partially paid records. Each group sorts oldest due date first. Each row opens the exact record. An open follow-up has a dated title, a client, and an optional site. The owner-only Gmail screen uses offline OAuth with `gmail.metadata`, renewable encrypted tokens, and a configurable `Needs action` label. It reads a maximum of five matching threads on demand and displays only subject, sender, and Gmail link. External Testing grants for Gmail expire after seven days. Prefer Google Personal mode for one mailbox where eligible. Live sign-in requires identifying the Google account that receives the own-domain mail and configuring its OAuth client. For third-party POP fetching, verify forwarding as the durable intake path.
 
 At **10:00 AM Asia/Manila (02:00 UTC)**, hPanel starts a bounded PHP CLI run. Laravel claims the owner-and-date slot, reads local due items, and fetches a capped set of labeled mail references. The brief builder ranks structured facts, renders the template, and persists the dashboard brief. A separate authenticated mail transport sends a generic notification and login-protected link to DJ’s fixed address. Gmail OAuth remains read-only. Avoid persisting raw message bodies and attachments. Set retention for any Gmail-derived references.
 
@@ -51,7 +51,7 @@ Pilot with one client before broad rollout. Support named client contacts, expli
 
 ## Architecture and hosting
 
-One Laravel application and one MySQL database. Phase 1 uses Filament for the owner forms and tables. Phase 2 adds a custom Today page. Verify the target Hostinger PHP CLI, extensions, Composer, safe migration access, and deployment layout before release there. Use `users`, `clients`, `sites`, `site_changes`, `payments`, and `audit_events` in Phase 1. Add `follow_ups`, `connector_accounts`, and `daily_briefs` in Phase 2, `action_proposals` in Phase 3, and `client_memberships` and `tickets` in Phase 4. Index foreign keys and frequently filtered columns. Paginate lists, defaulting to 20 per page. Use UTC timestamps with Asia/Manila for business dates and displays, and format amounts in Philippine pesos.
+One Laravel application and one MySQL database. Phase 1 uses Filament for the owner forms and tables. Phase 2 adds a custom Today page. Verify the target Hostinger PHP CLI, extensions, Composer, safe migration access, and deployment layout before release there. Use `users`, `clients`, `sites`, `site_changes`, `payments`, and `audit_events` in Phase 1. Add `follow_ups`, `gmail_connections`, and `daily_briefs` in Phase 2, `action_proposals` in Phase 3, and `client_memberships` and `tickets` in Phase 4. Index foreign keys and frequently filtered columns. Paginate lists, defaulting to 20 per page. Use UTC timestamps with Asia/Manila for business dates and displays, and format amounts in Philippine pesos.
 
 Assume Hostinger Web or Cloud, hPanel cron, and no root or long-running workers. Use short CLI jobs with bounded connector calls and timeouts. Verify the account’s memory, process, and runtime limits. If Composer is unavailable, build compatible artifacts locally or in CI and confirm a private migration path. Register the exact HTTPS OAuth callback, validate OAuth state, and test outbound mail on an allowed SMTP port or via HTTPS.
 

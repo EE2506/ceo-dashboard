@@ -1,17 +1,19 @@
 ---
 type: community
-cohesion: 0.40
-members: 5
+cohesion: 0.29
+members: 7
 ---
 
 # Community 2
 
-**Cohesion:** 0.40 - moderately connected
-**Members:** 5 nodes
+**Cohesion:** 0.29 - loosely connected
+**Members:** 7 nodes
 
 ## Members
 - [[10 AM Manila cron]] - document - PRD.md
+- [[AES-256-GCM encryption]] - document - PRD.md
 - [[Brief delivery and recovery]] - document - PRD.md
+- [[Gmail read-only OAuth]] - document - PRD.md
 - [[Hostinger Web or Cloud]] - document - PRD.md
 - [[Laravel and MySQL]] - document - PRD.md
 - [[Phase 2 daily brief]] - document - PRD.md
@@ -24,9 +26,9 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
-- 2 edges to [[_COMMUNITY_Community 3]]
+- 3 edges to [[_COMMUNITY_Community 3]]
+- 1 edge to [[_COMMUNITY_Community 0]]
 - 1 edge to [[_COMMUNITY_Community 1]]
-- 1 edge to [[_COMMUNITY_Community 4]]
 
 ## Top bridge nodes
-- [[Phase 2 daily brief]] - degree 6, connects to 1 community
+- [[Gmail read-only OAuth]] - degree 3, connects to 1 community
