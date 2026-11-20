@@ -1,14 +1,14 @@
 ---
 source_file: "PRD.md"
 type: "document"
-community: "Community 1"
+community: "Community 3"
 location: "L19"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_1
+  - community/Community_3
 ---
 
 # Client ownership and visibility
 
-#graphify/document #graphify/EXTRACTED #community/Community_1
+#graphify/document #graphify/EXTRACTED #community/Community_3

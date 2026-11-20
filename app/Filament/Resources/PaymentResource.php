@@ -2,6 +2,8 @@
 
 namespace App\Filament\Resources;
 
+use BackedEnum;
+use Filament\Support\Icons\Heroicon;
 use App\Filament\HubFields;
 use App\Filament\Resources\Pages\ManagePayments;
 use App\Models\Payment;
@@ -21,6 +23,8 @@ class PaymentResource extends Resource
     protected static ?string $model = Payment::class;
 
     protected static ?int $navigationSort = 4;
+
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedWallet;
 
     public static function form(Schema $schema): Schema
     {

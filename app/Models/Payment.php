@@ -9,6 +9,8 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 #[Fillable(['client_id', 'site_id', 'recorded_on', 'due_on', 'amount', 'purpose', 'status', 'invoice_url', 'is_client_visible'])]
 class Payment extends Model
 {
+    public const OUTSTANDING_STATUSES = ['unpaid', 'partial'];
+
     public const STATUSES = [
         'unpaid' => 'Unpaid',
         'partial' => 'Partially paid',

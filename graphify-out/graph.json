@@ -84,37 +84,15 @@
       "source_location": "L29"
     },
     {
-      "id": "approval",
-      "label": "Propose then approve",
+      "id": "analytics",
+      "label": "Owner analytics",
       "_origin": "semantic",
       "community": 1,
       "community_name": "Community 1",
       "file_type": "document",
-      "norm_label": "propose then approve",
+      "norm_label": "owner analytics",
       "source_file": "PRD.md",
-      "source_location": "L44"
-    },
-    {
-      "id": "audit",
-      "label": "Sensitive operation audit",
-      "_origin": "semantic",
-      "community": 1,
-      "community_name": "Community 1",
-      "file_type": "document",
-      "norm_label": "sensitive operation audit",
-      "source_file": "PRD.md",
-      "source_location": "L62"
-    },
-    {
-      "id": "client_scope",
-      "label": "Client ownership and visibility",
-      "_origin": "semantic",
-      "community": 1,
-      "community_name": "Community 1",
-      "file_type": "document",
-      "norm_label": "client ownership and visibility",
-      "source_file": "PRD.md",
-      "source_location": "L19"
+      "source_location": "L9"
     },
     {
       "id": "follow_ups",
@@ -126,6 +104,17 @@
       "norm_label": "dated client follow-ups",
       "source_file": "PRD.md",
       "source_location": "L32"
+    },
+    {
+      "id": "payments",
+      "label": "Client and site payments",
+      "_origin": "semantic",
+      "community": 1,
+      "community_name": "Community 1",
+      "file_type": "document",
+      "norm_label": "client and site payments",
+      "source_file": "PRD.md",
+      "source_location": "L17"
     },
     {
       "id": "today",
@@ -183,17 +172,6 @@
       "source_location": "L52"
     },
     {
-      "id": "model",
-      "label": "Provider-agnostic model adapter",
-      "_origin": "semantic",
-      "community": 2,
-      "community_name": "Community 2",
-      "file_type": "document",
-      "norm_label": "provider-agnostic model adapter",
-      "source_file": "PRD.md",
-      "source_location": "L46"
-    },
-    {
       "id": "stack",
       "label": "Laravel and MySQL",
       "_origin": "semantic",
@@ -216,6 +194,39 @@
       "source_location": "L42"
     },
     {
+      "id": "approval",
+      "label": "Propose then approve",
+      "_origin": "semantic",
+      "community": 3,
+      "community_name": "Community 3",
+      "file_type": "document",
+      "norm_label": "propose then approve",
+      "source_file": "PRD.md",
+      "source_location": "L44"
+    },
+    {
+      "id": "audit",
+      "label": "Sensitive operation audit",
+      "_origin": "semantic",
+      "community": 3,
+      "community_name": "Community 3",
+      "file_type": "document",
+      "norm_label": "sensitive operation audit",
+      "source_file": "PRD.md",
+      "source_location": "L62"
+    },
+    {
+      "id": "client_scope",
+      "label": "Client ownership and visibility",
+      "_origin": "semantic",
+      "community": 3,
+      "community_name": "Community 3",
+      "file_type": "document",
+      "norm_label": "client ownership and visibility",
+      "source_file": "PRD.md",
+      "source_location": "L19"
+    },
+    {
       "id": "hub",
       "label": "Phase 1 Client Sites hub",
       "_origin": "semantic",
@@ -227,15 +238,15 @@
       "source_location": "L13"
     },
     {
-      "id": "payments",
-      "label": "Client and site payments",
+      "id": "model",
+      "label": "Provider-agnostic model adapter",
       "_origin": "semantic",
       "community": 3,
       "community_name": "Community 3",
       "file_type": "document",
-      "norm_label": "client and site payments",
+      "norm_label": "provider-agnostic model adapter",
       "source_file": "PRD.md",
-      "source_location": "L17"
+      "source_location": "L46"
     },
     {
       "id": "portal",
@@ -306,6 +317,17 @@
   ],
   "links": [
     {
+      "source": "analytics",
+      "target": "payments",
+      "relation": "aggregates",
+      "_origin": "semantic",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "PRD.md",
+      "source_location": "L9",
+      "weight": 1
+    },
+    {
       "source": "agent_actions",
       "target": "model",
       "relation": "can_use",
@@ -314,6 +336,17 @@
       "confidence_score": 1,
       "source_file": "PRD.md",
       "source_location": "L42",
+      "weight": 1
+    },
+    {
+      "source": "analytics",
+      "target": "follow_ups",
+      "relation": "counts",
+      "_origin": "semantic",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "PRD.md",
+      "source_location": "L9",
       "weight": 1
     },
     {
@@ -402,6 +435,17 @@
       "confidence_score": 1,
       "source_file": "PRD.md",
       "source_location": "L52",
+      "weight": 1
+    },
+    {
+      "source": "dashboard",
+      "target": "analytics",
+      "relation": "includes",
+      "_origin": "semantic",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "PRD.md",
+      "source_location": "L9",
       "weight": 1
     },
     {
@@ -721,6 +765,17 @@
       "confidence_score": 1,
       "source_file": "readme.md",
       "source_location": "L1",
+      "weight": 1
+    },
+    {
+      "source": "today",
+      "target": "analytics",
+      "relation": "shows_snapshot_of",
+      "_origin": "semantic",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1,
+      "source_file": "PRD.md",
+      "source_location": "L9",
       "weight": 1
     },
     {

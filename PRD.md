@@ -1,12 +1,12 @@
 # Product requirements — CEO Dashboard
 
 **Owner** — DJ, solo Laravel developer in Davao City, Philippines
-**Status** — Client Sites hub and local Today implemented, November 21, 2026
+**Status** — Client Sites hub, Today, and owner Analytics implemented, November 21, 2026
 **Product scope** — Balanced, shipped in milestones
 
 ## Goal
 
-Give DJ one screen for today’s client work and one reliable record of what changed on each client site. At 10:00 AM Asia/Manila, deliver a daily brief on the dashboard and send a private notification email. Start with explicit rules and a plain template. Later, DJ can connect his own model to the same structured facts and approved application actions.
+Give DJ one screen for today’s client work and one reliable record of what changed on each client site. The owner-only Analytics view uses paid record totals by recorded date, outstanding record counts, tracked sites, and open and overdue follow-ups. At 10:00 AM Asia/Manila, deliver a daily brief on the dashboard and send a private notification email. Start with explicit rules and a plain template. Later, DJ can connect his own model to the same structured facts and approved application actions.
 
 The useful signals are mail DJ marked for action, follow-ups due, and unpaid items with a due date. Start with up to five prioritized items. Show the generation time and source health so missing data can be distinguished from an empty list. Use a single-column reading order on mobile and reserve accent color for due items.
 
@@ -71,7 +71,7 @@ Assume Hostinger Web or Cloud, hPanel cron, and no root or long-running workers.
 | 3 | Approved internal action, followed by a model trial | 3–5, plus 2–4 for the trial |
 | 4+ | Pilot contact access, invoices, status, and tickets | 7–12 |
 
-Use dated follow-ups before adding a project board. Consider calendar, externally monitored uptime and SSL, or GitHub only when each supplies a recurring decision. Invoice issuance, income charts, quick notes, job applications, the focus timer, and ministry workflows are outside the agreed release. Provider setup and hosting checks can add elapsed time.
+Use dated follow-ups before adding a project board. Consider calendar, externally monitored uptime and SSL, or GitHub only when each supplies a recurring decision. Invoice issuance, financial projections, quick notes, job applications, the focus timer, and ministry workflows are outside the agreed release. Provider setup and hosting checks can add elapsed time.
 
 ## References
 

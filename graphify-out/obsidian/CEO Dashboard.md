@@ -15,6 +15,7 @@ tags:
 - [[Agent handoff]] - `resumed_using` [EXTRACTED]
 - [[GitHub milestone workflow]] - `ships_via` [EXTRACTED]
 - [[Obsidian vault]] - `opens_as` [EXTRACTED]
+- [[Owner analytics]] - `includes` [EXTRACTED]
 - [[Product requirements]] - `specified_by` [EXTRACTED]
 - [[Project decisions]] - `records_decisions_in` [EXTRACTED]
 - [[Today priorities]] - `prioritizes` [EXTRACTED]

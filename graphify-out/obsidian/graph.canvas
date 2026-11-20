@@ -79,14 +79,14 @@
       "label": "Community 1",
       "x": 740,
       "y": 0,
-      "width": 660,
+      "width": 600,
       "height": 400,
       "color": "2"
     },
     {
-      "id": "n_client_scope",
+      "id": "n_payments",
       "type": "file",
-      "file": "graphify-out/obsidian/Client ownership and visibility.md",
+      "file": "graphify-out/obsidian/Client and site payments.md",
       "x": 760,
       "y": 80,
       "width": 180,
@@ -102,18 +102,9 @@
       "height": 60
     },
     {
-      "id": "n_approval",
+      "id": "n_analytics",
       "type": "file",
-      "file": "graphify-out/obsidian/Propose then approve.md",
-      "x": 1160,
-      "y": 80,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_audit",
-      "type": "file",
-      "file": "graphify-out/obsidian/Sensitive operation audit.md",
+      "file": "graphify-out/obsidian/Owner analytics.md",
       "x": 760,
       "y": 160,
       "width": 180,
@@ -132,7 +123,7 @@
       "id": "g2",
       "type": "group",
       "label": "Community 2",
-      "x": 1480,
+      "x": 1420,
       "y": 0,
       "width": 660,
       "height": 400,
@@ -142,7 +133,7 @@
       "id": "n_cron",
       "type": "file",
       "file": "graphify-out/obsidian/10 AM Manila cron.md",
-      "x": 1500,
+      "x": 1440,
       "y": 80,
       "width": 180,
       "height": 60
@@ -151,7 +142,7 @@
       "id": "n_delivery",
       "type": "file",
       "file": "graphify-out/obsidian/Brief delivery and recovery.md",
-      "x": 1700,
+      "x": 1640,
       "y": 80,
       "width": 180,
       "height": 60
@@ -160,7 +151,7 @@
       "id": "n_hosting",
       "type": "file",
       "file": "graphify-out/obsidian/Hostinger Web or Cloud.md",
-      "x": 1900,
+      "x": 1840,
       "y": 80,
       "width": 180,
       "height": 60
@@ -169,7 +160,7 @@
       "id": "n_stack",
       "type": "file",
       "file": "graphify-out/obsidian/Laravel and MySQL.md",
-      "x": 1500,
+      "x": 1440,
       "y": 160,
       "width": 180,
       "height": 60
@@ -178,16 +169,7 @@
       "id": "n_brief",
       "type": "file",
       "file": "graphify-out/obsidian/Phase 2 daily brief.md",
-      "x": 1700,
-      "y": 160,
-      "width": 180,
-      "height": 60
-    },
-    {
-      "id": "n_model",
-      "type": "file",
-      "file": "graphify-out/obsidian/Provider-agnostic model adapter.md",
-      "x": 1900,
+      "x": 1640,
       "y": 160,
       "width": 180,
       "height": 60
@@ -199,13 +181,13 @@
       "x": 0,
       "y": 500,
       "width": 660,
-      "height": 400,
+      "height": 420,
       "color": "4"
     },
     {
-      "id": "n_payments",
+      "id": "n_client_scope",
       "type": "file",
-      "file": "graphify-out/obsidian/Client and site payments.md",
+      "file": "graphify-out/obsidian/Client ownership and visibility.md",
       "x": 20,
       "y": 580,
       "width": 180,
@@ -248,11 +230,38 @@
       "height": 60
     },
     {
+      "id": "n_approval",
+      "type": "file",
+      "file": "graphify-out/obsidian/Propose then approve.md",
+      "x": 420,
+      "y": 660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_model",
+      "type": "file",
+      "file": "graphify-out/obsidian/Provider-agnostic model adapter.md",
+      "x": 20,
+      "y": 740,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_audit",
+      "type": "file",
+      "file": "graphify-out/obsidian/Sensitive operation audit.md",
+      "x": 220,
+      "y": 740,
+      "width": 180,
+      "height": 60
+    },
+    {
       "id": "n_vault_log",
       "type": "file",
       "file": "graphify-out/obsidian/Site change-log vault.md",
       "x": 420,
-      "y": 660,
+      "y": 740,
       "width": 180,
       "height": 60
     },
@@ -314,6 +323,12 @@
       "label": "reads [EXTRACTED]"
     },
     {
+      "id": "e_dashboard_analytics",
+      "fromNode": "n_dashboard",
+      "toNode": "n_analytics",
+      "label": "includes [EXTRACTED]"
+    },
+    {
       "id": "e_dashboard_vault",
       "fromNode": "n_dashboard",
       "toNode": "n_vault",
@@ -368,16 +383,16 @@
       "label": "requires [EXTRACTED]"
     },
     {
-      "id": "e_approval_client_scope",
-      "fromNode": "n_approval",
-      "toNode": "n_client_scope",
-      "label": "rechecks [EXTRACTED]"
+      "id": "e_analytics_payments",
+      "fromNode": "n_analytics",
+      "toNode": "n_payments",
+      "label": "aggregates [EXTRACTED]"
     },
     {
-      "id": "e_approval_audit",
-      "fromNode": "n_approval",
-      "toNode": "n_audit",
-      "label": "records_events_in [EXTRACTED]"
+      "id": "e_analytics_follow_ups",
+      "fromNode": "n_analytics",
+      "toNode": "n_follow_ups",
+      "label": "counts [EXTRACTED]"
     },
     {
       "id": "e_follow_ups_client_scope",
@@ -402,6 +417,12 @@
       "fromNode": "n_today",
       "toNode": "n_follow_ups",
       "label": "prioritizes [EXTRACTED]"
+    },
+    {
+      "id": "e_today_analytics",
+      "fromNode": "n_today",
+      "toNode": "n_analytics",
+      "label": "shows_snapshot_of [EXTRACTED]"
     },
     {
       "id": "e_today_payments",
@@ -440,12 +461,6 @@
       "label": "hosts [EXTRACTED]"
     },
     {
-      "id": "e_model_brief",
-      "fromNode": "n_model",
-      "toNode": "n_brief",
-      "label": "shares_structured_inputs_with [EXTRACTED]"
-    },
-    {
       "id": "e_agent_actions_model",
       "fromNode": "n_agent_actions",
       "toNode": "n_model",
@@ -456,6 +471,18 @@
       "fromNode": "n_agent_actions",
       "toNode": "n_approval",
       "label": "requires [EXTRACTED]"
+    },
+    {
+      "id": "e_approval_client_scope",
+      "fromNode": "n_approval",
+      "toNode": "n_client_scope",
+      "label": "rechecks [EXTRACTED]"
+    },
+    {
+      "id": "e_approval_audit",
+      "fromNode": "n_approval",
+      "toNode": "n_audit",
+      "label": "records_events_in [EXTRACTED]"
     },
     {
       "id": "e_hub_client_scope",
@@ -480,6 +507,12 @@
       "fromNode": "n_hub",
       "toNode": "n_audit",
       "label": "requires [EXTRACTED]"
+    },
+    {
+      "id": "e_model_brief",
+      "fromNode": "n_model",
+      "toNode": "n_brief",
+      "label": "shares_structured_inputs_with [EXTRACTED]"
     },
     {
       "id": "e_portal_client_scope",

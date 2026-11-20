@@ -1,12 +1,12 @@
 ---
 source_file: "PRD.md"
 type: "document"
-community: "Community 2"
+community: "Community 3"
 location: "L46"
 tags:
   - graphify/document
   - graphify/EXTRACTED
-  - community/Community_2
+  - community/Community_3
 ---
 
 # Provider-agnostic model adapter
@@ -14,4 +14,4 @@ tags:
 ## Connections
 - [[Phase 2 daily brief]] - `shares_structured_inputs_with` [EXTRACTED]
 
-#graphify/document #graphify/EXTRACTED #community/Community_2
+#graphify/document #graphify/EXTRACTED #community/Community_3

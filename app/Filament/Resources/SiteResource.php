@@ -2,6 +2,8 @@
 
 namespace App\Filament\Resources;
 
+use BackedEnum;
+use Filament\Support\Icons\Heroicon;
 use App\Filament\HubFields;
 use App\Filament\Resources\Pages\ManageSites;
 use App\Models\Client;
@@ -21,6 +23,8 @@ class SiteResource extends Resource
     protected static ?string $model = Site::class;
 
     protected static ?int $navigationSort = 2;
+
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedWindow;
 
     public static function form(Schema $schema): Schema
     {

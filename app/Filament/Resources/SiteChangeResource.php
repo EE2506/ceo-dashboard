@@ -2,6 +2,8 @@
 
 namespace App\Filament\Resources;
 
+use BackedEnum;
+use Filament\Support\Icons\Heroicon;
 use App\Filament\HubFields;
 use App\Filament\Resources\Pages\ManageSiteChanges;
 use App\Models\Site;
@@ -22,7 +24,11 @@ class SiteChangeResource extends Resource
 
     protected static ?int $navigationSort = 3;
 
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedClock;
+
     protected static ?string $navigationLabel = 'Change-log vault';
+
+    protected static ?string $pluralModelLabel = 'Change-log vault';
 
     public static function form(Schema $schema): Schema
     {

@@ -2,6 +2,8 @@
 
 namespace App\Filament\Resources;
 
+use BackedEnum;
+use Filament\Support\Icons\Heroicon;
 use App\Filament\Resources\Pages\ManageClients;
 use App\Models\Client;
 use Filament\Actions\EditAction;
@@ -16,6 +18,8 @@ class ClientResource extends Resource
     protected static ?string $model = Client::class;
 
     protected static ?int $navigationSort = 1;
+
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedUsers;
 
     public static function form(Schema $schema): Schema
     {

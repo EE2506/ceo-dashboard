@@ -4,6 +4,8 @@ namespace App\Providers;
 
 use App\Filament\Pages\OwnerLogin;
 use App\Filament\Pages\Today;
+use App\Filament\Pages\Analytics;
+use Filament\Enums\ThemeMode;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\AuthenticateSession;
 use Filament\Http\Middleware\DisableBladeIconComponents;
@@ -11,6 +13,7 @@ use Filament\Http\Middleware\DispatchServingFilamentEvent;
 use Filament\Panel;
 use Filament\PanelProvider;
 use Filament\Support\Colors\Color;
+use Filament\View\PanelsRenderHook;
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 use Illuminate\Cookie\Middleware\EncryptCookies;
 use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
@@ -32,7 +35,12 @@ class AdminPanelProvider extends PanelProvider
             ->databaseTransactions()
             ->globalSearch(false)
             ->colors(['primary' => Color::Amber])
-            ->pages([Today::class])
+            ->defaultThemeMode(ThemeMode::System)
+            ->sidebarCollapsibleOnDesktop()
+            ->collapsedSidebarWidth('4rem')
+            ->sidebarWidth('15rem')
+            ->renderHook(PanelsRenderHook::HEAD_END, fn () => view('filament.dashboard-head'))
+            ->pages([Today::class, Analytics::class])
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\Filament\Resources')
             ->middleware([
                 EncryptCookies::class,

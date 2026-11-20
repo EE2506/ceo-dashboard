@@ -26,10 +26,10 @@ SORT file.name ASC
 ```
 
 ## Connections to other communities
+- 2 edges to [[_COMMUNITY_Community 1]]
 - 2 edges to [[_COMMUNITY_Community 4]]
-- 1 edge to [[_COMMUNITY_Community 1]]
 - 1 edge to [[_COMMUNITY_Community 3]]
 
 ## Top bridge nodes
 - [[Product requirements]] - degree 4, connects to 2 communities
-- [[CEO Dashboard]] - degree 6, connects to 1 community
+- [[CEO Dashboard]] - degree 7, connects to 1 community

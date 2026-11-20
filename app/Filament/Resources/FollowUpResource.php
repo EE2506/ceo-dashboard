@@ -2,6 +2,8 @@
 
 namespace App\Filament\Resources;
 
+use BackedEnum;
+use Filament\Support\Icons\Heroicon;
 use App\Filament\HubFields;
 use App\Filament\Resources\Pages\ManageFollowUps;
 use App\Models\FollowUp;
@@ -17,7 +19,13 @@ class FollowUpResource extends Resource
 {
     protected static ?string $model = FollowUp::class;
 
+    protected static ?string $modelLabel = 'Follow-up';
+
+    protected static ?string $pluralModelLabel = 'Follow-ups';
+
     protected static ?int $navigationSort = 5;
+
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedClipboardDocumentCheck;
 
     public static function form(Schema $schema): Schema
     {

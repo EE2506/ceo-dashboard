@@ -1,13 +1,13 @@
 ---
 type: community
-cohesion: 0.33
-members: 6
+cohesion: 0.40
+members: 5
 ---
 
 # Community 2
 
-**Cohesion:** 0.33 - loosely connected
-**Members:** 6 nodes
+**Cohesion:** 0.40 - moderately connected
+**Members:** 5 nodes
 
 ## Members
 - [[10 AM Manila cron]] - document - PRD.md
@@ -15,7 +15,6 @@ members: 6
 - [[Hostinger Web or Cloud]] - document - PRD.md
 - [[Laravel and MySQL]] - document - PRD.md
 - [[Phase 2 daily brief]] - document - PRD.md
-- [[Provider-agnostic model adapter]] - document - PRD.md
 
 ## Live Query (requires Dataview plugin)
 

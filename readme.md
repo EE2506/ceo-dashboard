@@ -2,7 +2,7 @@
 
 A personal dashboard for DJ, a freelance web developer in Davao City. The first release is a Client Sites hub. The next release answers one question at 10 AM Manila time: what needs DJ’s attention today?
 
-**Status** — The owner-only Client Sites hub and local Today page are implemented. The Gmail connector and 10 AM brief are the remaining Phase 2 milestones.
+**Status** — The owner-only Client Sites hub, Today page, and Analytics are implemented. The Gmail connector and 10 AM brief are the remaining Phase 2 milestones.
 
 ## Start here
 

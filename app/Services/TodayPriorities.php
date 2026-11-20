@@ -39,7 +39,7 @@ class TodayPriorities
 
         $payments = Payment::query()
             ->with('client')
-            ->whereIn('status', ['unpaid', 'partial'])
+            ->whereIn('status', Payment::OUTSTANDING_STATUSES)
             ->where('due_on', '<=', $date)
             ->orderBy('due_on')
             ->orderBy('id')
