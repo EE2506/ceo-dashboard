@@ -1,0 +1,18 @@
+---
+source_file: "PRD.md"
+type: "document"
+community: "Community 1"
+location: "L42"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Community_1
+---
+
+# Propose then approve
+
+## Connections
+- [[Client ownership and visibility]] - `rechecks` [EXTRACTED]
+- [[Sensitive operation audit]] - `records_events_in` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/Community_1

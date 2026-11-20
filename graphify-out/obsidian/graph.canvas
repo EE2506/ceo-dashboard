@@ -1,0 +1,530 @@
+{
+  "nodes": [
+    {
+      "id": "g0",
+      "type": "group",
+      "label": "Community 0",
+      "x": 0,
+      "y": 0,
+      "width": 660,
+      "height": 420,
+      "color": "1"
+    },
+    {
+      "id": "n_agents",
+      "type": "file",
+      "file": "graphify-out/obsidian/Agent handoff.md",
+      "x": 20,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_dashboard",
+      "type": "file",
+      "file": "graphify-out/obsidian/CEO Dashboard.md",
+      "x": 220,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_pending",
+      "type": "file",
+      "file": "graphify-out/obsidian/Decisions to confirm.md",
+      "x": 420,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_milestones",
+      "type": "file",
+      "file": "graphify-out/obsidian/GitHub milestone workflow.md",
+      "x": 20,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_vault",
+      "type": "file",
+      "file": "graphify-out/obsidian/Obsidian vault.md",
+      "x": 220,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_prd",
+      "type": "file",
+      "file": "graphify-out/obsidian/Product requirements.md",
+      "x": 420,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_decisions",
+      "type": "file",
+      "file": "graphify-out/obsidian/Project decisions.md",
+      "x": 20,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g1",
+      "type": "group",
+      "label": "Community 1",
+      "x": 740,
+      "y": 0,
+      "width": 660,
+      "height": 420,
+      "color": "2"
+    },
+    {
+      "id": "n_encryption",
+      "type": "file",
+      "file": "graphify-out/obsidian/AES-256-GCM encryption.md",
+      "x": 760,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_client_scope",
+      "type": "file",
+      "file": "graphify-out/obsidian/Client ownership and visibility.md",
+      "x": 960,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_gmail",
+      "type": "file",
+      "file": "graphify-out/obsidian/Gmail read-only OAuth.md",
+      "x": 1160,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_hub",
+      "type": "file",
+      "file": "graphify-out/obsidian/Phase 1 Client Sites hub.md",
+      "x": 760,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_approval",
+      "type": "file",
+      "file": "graphify-out/obsidian/Propose then approve.md",
+      "x": 960,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_security",
+      "type": "file",
+      "file": "graphify-out/obsidian/Security and release gates.md",
+      "x": 1160,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_audit",
+      "type": "file",
+      "file": "graphify-out/obsidian/Sensitive operation audit.md",
+      "x": 760,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g2",
+      "type": "group",
+      "label": "Community 2",
+      "x": 1480,
+      "y": 0,
+      "width": 660,
+      "height": 400,
+      "color": "3"
+    },
+    {
+      "id": "n_delivery",
+      "type": "file",
+      "file": "graphify-out/obsidian/Brief delivery and recovery.md",
+      "x": 1500,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_brief",
+      "type": "file",
+      "file": "graphify-out/obsidian/Phase 2 daily brief.md",
+      "x": 1700,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_agent_actions",
+      "type": "file",
+      "file": "graphify-out/obsidian/Phase 3 approved actions.md",
+      "x": 1900,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_roadmap",
+      "type": "file",
+      "file": "graphify-out/obsidian/Phased roadmap.md",
+      "x": 1500,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_model",
+      "type": "file",
+      "file": "graphify-out/obsidian/Provider-agnostic model adapter.md",
+      "x": 1700,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g3",
+      "type": "group",
+      "label": "Community 3",
+      "x": 0,
+      "y": 500,
+      "width": 600,
+      "height": 400,
+      "color": "4"
+    },
+    {
+      "id": "n_payments",
+      "type": "file",
+      "file": "graphify-out/obsidian/Client and site payments.md",
+      "x": 20,
+      "y": 580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_portal",
+      "type": "file",
+      "file": "graphify-out/obsidian/Phase 4 client portal.md",
+      "x": 220,
+      "y": 580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_vault_log",
+      "type": "file",
+      "file": "graphify-out/obsidian/Site change-log vault.md",
+      "x": 20,
+      "y": 660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_today",
+      "type": "file",
+      "file": "graphify-out/obsidian/Today priorities.md",
+      "x": 220,
+      "y": 660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g4",
+      "type": "group",
+      "label": "Community 4",
+      "x": 740,
+      "y": 500,
+      "width": 600,
+      "height": 400,
+      "color": "5"
+    },
+    {
+      "id": "n_cron",
+      "type": "file",
+      "file": "graphify-out/obsidian/10 AM Manila cron.md",
+      "x": 760,
+      "y": 580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_hosting",
+      "type": "file",
+      "file": "graphify-out/obsidian/Hostinger Web or Cloud.md",
+      "x": 960,
+      "y": 580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_stack",
+      "type": "file",
+      "file": "graphify-out/obsidian/Laravel and MySQL.md",
+      "x": 760,
+      "y": 660,
+      "width": 180,
+      "height": 60
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_agents_milestones",
+      "fromNode": "n_agents",
+      "toNode": "n_milestones",
+      "label": "follows [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_decisions",
+      "fromNode": "n_agents",
+      "toNode": "n_decisions",
+      "label": "reads [EXTRACTED]"
+    },
+    {
+      "id": "e_agents_prd",
+      "fromNode": "n_agents",
+      "toNode": "n_prd",
+      "label": "reads [EXTRACTED]"
+    },
+    {
+      "id": "e_dashboard_vault",
+      "fromNode": "n_dashboard",
+      "toNode": "n_vault",
+      "label": "opens_as [EXTRACTED]"
+    },
+    {
+      "id": "e_dashboard_today",
+      "fromNode": "n_dashboard",
+      "toNode": "n_today",
+      "label": "prioritizes [EXTRACTED]"
+    },
+    {
+      "id": "e_dashboard_decisions",
+      "fromNode": "n_dashboard",
+      "toNode": "n_decisions",
+      "label": "records_decisions_in [EXTRACTED]"
+    },
+    {
+      "id": "e_dashboard_agents",
+      "fromNode": "n_dashboard",
+      "toNode": "n_agents",
+      "label": "resumed_using [EXTRACTED]"
+    },
+    {
+      "id": "e_dashboard_milestones",
+      "fromNode": "n_dashboard",
+      "toNode": "n_milestones",
+      "label": "ships_via [EXTRACTED]"
+    },
+    {
+      "id": "e_dashboard_prd",
+      "fromNode": "n_dashboard",
+      "toNode": "n_prd",
+      "label": "specified_by [EXTRACTED]"
+    },
+    {
+      "id": "e_decisions_pending",
+      "fromNode": "n_decisions",
+      "toNode": "n_pending",
+      "label": "tracks [EXTRACTED]"
+    },
+    {
+      "id": "e_prd_roadmap",
+      "fromNode": "n_prd",
+      "toNode": "n_roadmap",
+      "label": "phased_by [EXTRACTED]"
+    },
+    {
+      "id": "e_prd_security",
+      "fromNode": "n_prd",
+      "toNode": "n_security",
+      "label": "requires [EXTRACTED]"
+    },
+    {
+      "id": "e_approval_client_scope",
+      "fromNode": "n_approval",
+      "toNode": "n_client_scope",
+      "label": "rechecks [EXTRACTED]"
+    },
+    {
+      "id": "e_approval_audit",
+      "fromNode": "n_approval",
+      "toNode": "n_audit",
+      "label": "records_events_in [EXTRACTED]"
+    },
+    {
+      "id": "e_gmail_encryption",
+      "fromNode": "n_gmail",
+      "toNode": "n_encryption",
+      "label": "requires [EXTRACTED]"
+    },
+    {
+      "id": "e_hub_client_scope",
+      "fromNode": "n_hub",
+      "toNode": "n_client_scope",
+      "label": "enforces [EXTRACTED]"
+    },
+    {
+      "id": "e_hub_payments",
+      "fromNode": "n_hub",
+      "toNode": "n_payments",
+      "label": "records [EXTRACTED]"
+    },
+    {
+      "id": "e_hub_vault_log",
+      "fromNode": "n_hub",
+      "toNode": "n_vault_log",
+      "label": "records [EXTRACTED]"
+    },
+    {
+      "id": "e_hub_audit",
+      "fromNode": "n_hub",
+      "toNode": "n_audit",
+      "label": "requires [EXTRACTED]"
+    },
+    {
+      "id": "e_security_milestones",
+      "fromNode": "n_security",
+      "toNode": "n_milestones",
+      "label": "gates [EXTRACTED]"
+    },
+    {
+      "id": "e_security_audit",
+      "fromNode": "n_security",
+      "toNode": "n_audit",
+      "label": "requires [EXTRACTED]"
+    },
+    {
+      "id": "e_security_client_scope",
+      "fromNode": "n_security",
+      "toNode": "n_client_scope",
+      "label": "requires [EXTRACTED]"
+    },
+    {
+      "id": "e_security_encryption",
+      "fromNode": "n_security",
+      "toNode": "n_encryption",
+      "label": "requires [EXTRACTED]"
+    },
+    {
+      "id": "e_agent_actions_model",
+      "fromNode": "n_agent_actions",
+      "toNode": "n_model",
+      "label": "can_use [EXTRACTED]"
+    },
+    {
+      "id": "e_agent_actions_approval",
+      "fromNode": "n_agent_actions",
+      "toNode": "n_approval",
+      "label": "requires [EXTRACTED]"
+    },
+    {
+      "id": "e_brief_delivery",
+      "fromNode": "n_brief",
+      "toNode": "n_delivery",
+      "label": "publishes_through [EXTRACTED]"
+    },
+    {
+      "id": "e_brief_gmail",
+      "fromNode": "n_brief",
+      "toNode": "n_gmail",
+      "label": "reads [EXTRACTED]"
+    },
+    {
+      "id": "e_brief_cron",
+      "fromNode": "n_brief",
+      "toNode": "n_cron",
+      "label": "triggered_by [EXTRACTED]"
+    },
+    {
+      "id": "e_model_brief",
+      "fromNode": "n_model",
+      "toNode": "n_brief",
+      "label": "shares_structured_inputs_with [EXTRACTED]"
+    },
+    {
+      "id": "e_roadmap_agent_actions",
+      "fromNode": "n_roadmap",
+      "toNode": "n_agent_actions",
+      "label": "includes [EXTRACTED]"
+    },
+    {
+      "id": "e_roadmap_brief",
+      "fromNode": "n_roadmap",
+      "toNode": "n_brief",
+      "label": "includes [EXTRACTED]"
+    },
+    {
+      "id": "e_roadmap_portal",
+      "fromNode": "n_roadmap",
+      "toNode": "n_portal",
+      "label": "includes [EXTRACTED]"
+    },
+    {
+      "id": "e_roadmap_hub",
+      "fromNode": "n_roadmap",
+      "toNode": "n_hub",
+      "label": "starts_with [EXTRACTED]"
+    },
+    {
+      "id": "e_portal_client_scope",
+      "fromNode": "n_portal",
+      "toNode": "n_client_scope",
+      "label": "enforces [EXTRACTED]"
+    },
+    {
+      "id": "e_portal_payments",
+      "fromNode": "n_portal",
+      "toNode": "n_payments",
+      "label": "exposes_selected_records [EXTRACTED]"
+    },
+    {
+      "id": "e_portal_vault_log",
+      "fromNode": "n_portal",
+      "toNode": "n_vault_log",
+      "label": "scopes [EXTRACTED]"
+    },
+    {
+      "id": "e_today_brief",
+      "fromNode": "n_today",
+      "toNode": "n_brief",
+      "label": "displays [EXTRACTED]"
+    },
+    {
+      "id": "e_today_payments",
+      "fromNode": "n_today",
+      "toNode": "n_payments",
+      "label": "surfaces_due_items_from [EXTRACTED]"
+    },
+    {
+      "id": "e_cron_hosting",
+      "fromNode": "n_cron",
+      "toNode": "n_hosting",
+      "label": "runs_on [EXTRACTED]"
+    },
+    {
+      "id": "e_hosting_stack",
+      "fromNode": "n_hosting",
+      "toNode": "n_stack",
+      "label": "hosts [EXTRACTED]"
+    }
+  ]
+}

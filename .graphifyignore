@@ -1,0 +1,6 @@
+# Planning corpus only. Reassess exclusions when implementation is approved.
+*
+!readme.md
+!PRD.md
+!Decisions.md
+!AGENTS.md
