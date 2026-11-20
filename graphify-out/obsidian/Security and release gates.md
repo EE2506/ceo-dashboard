@@ -2,7 +2,7 @@
 source_file: "PRD.md"
 type: "document"
 community: "Community 1"
-location: "L56"
+location: "L58"
 tags:
   - graphify/document
   - graphify/EXTRACTED

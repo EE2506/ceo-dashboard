@@ -8,6 +8,11 @@
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
+## Graph Freshness
+- Built from commit: `347bc902`
+- Run `git rev-parse HEAD` and compare to check if the graph is stale.
+- Run `graphify update .` after code changes (no API cost).
+
 ## Community Hubs (Navigation)
 - Community 0
 - Community 1
@@ -21,8 +26,8 @@
 3. `Phase 1 Client Sites hub` - 5 edges
 4. `Security and release gates` - 5 edges
 5. `Phased roadmap` - 5 edges
-6. `Product requirements` - 4 edges
-7. `Agent handoff` - 4 edges
+6. `Agent handoff` - 4 edges
+7. `Product requirements` - 4 edges
 8. `Client ownership and visibility` - 4 edges
 9. `Phase 4 client portal` - 4 edges
 10. `Project decisions` - 3 edges
@@ -32,12 +37,12 @@
   readme.md → PRD.md
 - `Security and release gates` --gates--> `GitHub milestone workflow`  [EXTRACTED]
   PRD.md → readme.md
-- `CEO Dashboard` --resumed_using--> `Agent handoff`  [EXTRACTED]
-  readme.md → AGENTS.md
-- `CEO Dashboard` --records_decisions_in--> `Project decisions`  [EXTRACTED]
-  readme.md → Decisions.md
-- `CEO Dashboard` --specified_by--> `Product requirements`  [EXTRACTED]
-  readme.md → PRD.md
+- `Agent handoff` --reads--> `Project decisions`  [EXTRACTED]
+  AGENTS.md → Decisions.md
+- `Agent handoff` --follows--> `GitHub milestone workflow`  [EXTRACTED]
+  AGENTS.md → readme.md
+- `Agent handoff` --reads--> `Product requirements`  [EXTRACTED]
+  AGENTS.md → PRD.md
 
 ## Communities (5 total, 0 thin omitted)
 
@@ -62,7 +67,7 @@ Cohesion: 0.67
 Nodes (3): 10 AM Manila cron, Hostinger Web or Cloud, Laravel and MySQL
 
 ## Knowledge Gaps
-- **4 isolated node(s):** `Obsidian vault`, `Brief delivery and recovery`, `Laravel and MySQL`, `Decisions to confirm`
+- **4 isolated node(s):** `Decisions to confirm`, `Obsidian vault`, `Brief delivery and recovery`, `Laravel and MySQL`
   These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 4 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 
 ## Suggested Questions
@@ -70,7 +75,7 @@ _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `Phase 2 daily brief` connect `Community 2` to `Community 1`, `Community 4`?**
   _High betweenness centrality (0.065) - this node is a cross-community bridge._
-- **What connects `Obsidian vault`, `Brief delivery and recovery`, `Laravel and MySQL` to the rest of the system?**
+- **What connects `Decisions to confirm`, `Obsidian vault`, `Brief delivery and recovery` to the rest of the system?**
   _4 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Why does `Phased roadmap` connect `Community 2` to `Community 1`, `Community 3`?**
   _High betweenness centrality (0.053) - this node is a cross-community bridge._

@@ -1,0 +1,23 @@
+<?php
+
+namespace App\Providers;
+
+use App\Models\Client;
+use App\Models\Payment;
+use App\Models\Site;
+use App\Models\SiteChange;
+use App\Observers\ClientHubAudit;
+use App\Policies\ClientHubPolicy;
+use Illuminate\Support\Facades\Gate;
+use Illuminate\Support\ServiceProvider;
+
+class AppServiceProvider extends ServiceProvider
+{
+    public function boot(): void
+    {
+        foreach ([Client::class, Site::class, SiteChange::class, Payment::class] as $model) {
+            Gate::policy($model, ClientHubPolicy::class);
+            $model::observe(ClientHubAudit::class);
+        }
+    }
+}

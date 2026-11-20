@@ -1,7 +1,7 @@
 # Product requirements — CEO Dashboard
 
 **Owner** — DJ, solo Laravel developer in Davao City, Philippines
-**Status** — Planning, November 21, 2026
+**Status** — Phase 1 implementation, November 21, 2026
 **Product scope** — Balanced, shipped in milestones
 
 ## Goal
@@ -17,6 +17,8 @@ Provide login-protected owner access to clients and their sites. Each client can
 The change-log vault records a date, title, what changed, why, and links for each entry. Display entries newest first for client walkthroughs. Payment records store the client, optional site, date, exact PHP amount, purpose, status, and invoice link. An optional due date supports later reminders. A payment can belong directly to a client and installment records can reference the same invoice.
 
 Every client-owned record carries `client_id`. Where a record also references a site, enforce that the site belongs to the same client. Changes and payments default to internal visibility. Laravel policies and scoped queries enforce access at the server. Reserve the client role in the authorization design while owner access is the only live role.
+
+Phase 1 uses Filament 5 for the owner panel and provisions owners through a private Laravel CLI command with a username and a hidden password prompt. The panel uses Laravel policies, and MySQL enforces client/site consistency. Audit entries store identifiers and outcomes. The owner can mark content for future client visibility, with access reserved until a portal is implemented.
 
 **Acceptance**
 
@@ -49,7 +51,7 @@ Pilot with one client before broad rollout. Support named client contacts, expli
 
 ## Architecture and hosting
 
-One Laravel application and one MySQL database. Filament is a candidate for forms and tables with a custom Today page. Confirm PHP CLI, extensions, Composer, safe migration access, and deployment layout before selecting it. Use `users`, `clients`, `sites`, `site_changes`, `payments`, and `audit_events` in Phase 1. Add `follow_ups`, `connector_accounts`, and `daily_briefs` in Phase 2, `action_proposals` in Phase 3, and `client_memberships` and `tickets` in Phase 4. Index foreign keys and frequently filtered columns. Paginate lists, defaulting to 20 per page. Use UTC timestamps with Asia/Manila for business dates and displays, and format amounts in Philippine pesos.
+One Laravel application and one MySQL database. Phase 1 uses Filament for the owner forms and tables. Phase 2 adds a custom Today page. Verify the target Hostinger PHP CLI, extensions, Composer, safe migration access, and deployment layout before release there. Use `users`, `clients`, `sites`, `site_changes`, `payments`, and `audit_events` in Phase 1. Add `follow_ups`, `connector_accounts`, and `daily_briefs` in Phase 2, `action_proposals` in Phase 3, and `client_memberships` and `tickets` in Phase 4. Index foreign keys and frequently filtered columns. Paginate lists, defaulting to 20 per page. Use UTC timestamps with Asia/Manila for business dates and displays, and format amounts in Philippine pesos.
 
 Assume Hostinger Web or Cloud, hPanel cron, and no root or long-running workers. Use short CLI jobs with bounded connector calls and timeouts. Verify the account’s memory, process, and runtime limits. If Composer is unavailable, build compatible artifacts locally or in CI and confirm a private migration path. Register the exact HTTPS OAuth callback, validate OAuth state, and test outbound mail on an allowed SMTP port or via HTTPS.
 
